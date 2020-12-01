@@ -1,5 +1,4 @@
-package Model;
-
+import Model.Bug;
 
 public class MainApp {
     public static void main(String[] args) {
@@ -28,7 +27,7 @@ public class MainApp {
         firstBug.setPriorityBug(-6);
         System.out.println(firstBug.getPriorityBug());
 
-        firstBug.setPriorityBug(4);
+        firstBug.setPriorityBug(3);
         System.out.println(firstBug.getPriorityBug());
     }
 }
