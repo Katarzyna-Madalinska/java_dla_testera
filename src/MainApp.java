@@ -16,7 +16,7 @@ public class MainApp {
 
         // e-mail
         System.out.println(firstBug.getEmailPersonReportingBug());
-        firstBug.setEmailPersonReportingBug("kasiaAtasia.pl");
+        firstBug.setEmailPersonReportingBug("kasiaAtwp.pl");
         System.out.println(firstBug.getEmailPersonReportingBug());
 
         //priority Bug

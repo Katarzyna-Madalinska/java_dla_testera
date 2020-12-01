@@ -11,7 +11,8 @@ public class Bug {
     }
 
     public void setBugDescription(String bugDescription) {
-        if (bugDescription.length() <= 10) {
+        if (bugDescription.length() < 10) {
+            System.out.println("Incorrect bug description");
         } else {
             this.bugDescription = bugDescription;
         }
@@ -27,6 +28,10 @@ public class Bug {
         } else {
             System.out.println("Incorect e-mail adrress, missing '@'");
         }
+    }
+
+    public int getPriorityBug() {
+        return priorityBug;
     }
 
     public void setPriorityBug(int priorityBug) {
@@ -75,9 +80,5 @@ public class Bug {
 
     public void showStatusBug() {
         System.out.println("The status of bug is " + convertStatusOffBug());
-    }
-
-    public int getPriorityBug() {
-        return priorityBug;
     }
 }
