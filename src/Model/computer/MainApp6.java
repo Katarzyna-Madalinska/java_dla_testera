@@ -3,7 +3,7 @@ package Model.computer;
 import Model.computer.Laptop;
 import Model.computer.PC;
 
-public class MainApp5 {
+public class MainApp6 {
     public static void main(String[] args) {
 
         PC officeComputer = new PC("Office computer", "HP", 500, 128);
