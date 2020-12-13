@@ -67,7 +67,11 @@ abstract public class Computer {
     // gdy dla kalsy latop i PC utworze metody ale w klasie matka nie chce przypisac jakies wartosici
     public abstract int volumeUp();
 
+    public abstract int volumeUp(int volumeLevel);
 
     public abstract int volumeDown();
+
+    public abstract int volumeDown(int volumeLevel);
+
 
 }

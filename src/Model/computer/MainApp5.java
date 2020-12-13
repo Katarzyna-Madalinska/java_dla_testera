@@ -24,7 +24,7 @@ public class MainApp5 {
         }
 
         //odniesienie do metody, ktorej nie ma w klasie - matka
-        ((PC)officeComputer2).showComputerName();
+     /*   ((PC)officeComputer2).showComputerName();
 
         //zglosnienie laptopa i PC
         System.out.println(officeComputer1.volumeUp());
@@ -32,8 +32,28 @@ public class MainApp5 {
 
         System.out.println(officeComputer1.volumeDown());
         System.out.println(officeComputer2.volumeDown());
-        System.out.println(gamingLaptop2.volumeDown());
+        System.out.println(gamingLaptop2.volumeDown())*/;
 
+        System.out.println("Gaming laptop up: ");
+        System.out.println(gamingLaptop.volumeUp(0));
+        System.out.println(gamingLaptop.volumeUp(99));
+        System.out.println(gamingLaptop.volumeUp(100));
+
+        System.out.println("Gaming laptop down: ");
+        System.out.println(gamingLaptop.volumeDown(0));
+        System.out.println(gamingLaptop.volumeDown(1));
+        System.out.println(gamingLaptop.volumeDown(100));
+
+        System.out.println("Office computer1 up: ");
+        System.out.println(officeComputer1.volumeUp(0));
+        System.out.println(officeComputer1.volumeUp(99));
+
+        System.out.println("Office computer1 down: ");
+        System.out.println(officeComputer1.volumeDown(0));
+        System.out.println(officeComputer1.volumeDown(1));
+        System.out.println(officeComputer1.volumeDown(100));
+
+        //System.out.println(officeComputer1.volumeDown(50));
 
 
         /* Laptop gamingLaptop
