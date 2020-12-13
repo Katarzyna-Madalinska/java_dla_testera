@@ -17,10 +17,31 @@ public class Laptop extends Computer {
         } else {
             System.out.println("Battery level is to low!");
         }
+    }
 
+    @Override
+    public void switchOff() {
+        System.out.println("Wylaczam laptop " + name);
+        state = false;
     }
 
     public void setBatteyLevel(int newBatteryLevel) {
         baterryLevel = newBatteryLevel;
     }
+
+    public int volumeUp() {
+        return volumeLevel += 5;
+    }
+
+    @Override
+    public int volumeDown() {
+        volumeLevel -= 2;
+        if (volumeLevel <= 0) {
+            return 0;
+        } else {
+            return volumeLevel;
+        }
+    }
+
 }
+
