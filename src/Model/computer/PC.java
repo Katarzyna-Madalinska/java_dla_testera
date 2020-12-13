@@ -39,8 +39,8 @@ public class PC extends Computer {
 
     @Override
     public int volumeUp(int volumeLevel) {
-        volumeLevel +=1;
-        if( volumeLevel >=100) {
+        volumeLevel += 1;
+        if (volumeLevel >= 100) {
             return 100;
         } else {
             return volumeLevel;
@@ -60,8 +60,8 @@ public class PC extends Computer {
 
     @Override
     public int volumeDown(int volumeLevel) {
-        volumeLevel -=2;
-        if (volumeLevel <=0) {
+        volumeLevel -= 2;
+        if (volumeLevel <= 0) {
             return 0;
         } else {
             return volumeLevel;

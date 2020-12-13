@@ -64,7 +64,6 @@ abstract public class Computer {
         return state;
     }
 
-    // gdy dla kalsy latop i PC utworze metody ale w klasie matka nie chce przypisac jakies wartosici
     public abstract int volumeUp();
 
     public abstract int volumeUp(int volumeLevel);
