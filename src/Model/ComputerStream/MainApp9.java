@@ -38,13 +38,13 @@ public class MainApp9 {
         if (maxRamComparator.isPresent()) {
             System.out.println(maxRamComparator.get());
         } else {
-            System.out.println("Brak produktu do wyswitlenia");
+            System.out.println("There is no result to display");
         }
 
         // 3.2 used orElseThrow
         Computer ramMaxOrElseThrow = computers.stream()
                 .max(Comparator.comparingInt(comp -> comp.getRam().getSize()))
-                .orElseThrow(() -> new IllegalStateException("NIe ma komputerów do porównania"));
+                .orElseThrow(() -> new IllegalStateException("There is no computer to display "));
         System.out.println(ramMaxOrElseThrow.getName());
 
         // 3.3 used orElse
@@ -57,7 +57,7 @@ public class MainApp9 {
         // 3.4 orElseGet
         Computer ramMaxOrElseGet = computers.stream()
                 .max(Comparator.comparingInt(comp -> comp.getRam().getSize()))
-                .orElseGet(() -> new PC("Testowy", "Test1", new Hdd("Dell", 500), new Ram("Dell", 128)));
+                .orElseGet(() -> new PC("Test", "Test1", new Hdd("Dell", 500), new Ram("Dell", 128)));
 
         System.out.println(ramMaxOrElseGet.getName());
 
